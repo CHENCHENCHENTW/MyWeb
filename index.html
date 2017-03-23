@@ -24,12 +24,22 @@
       padding: 10px;
       overflow: hidden;
    }
-
+ 
    li {
       float: left;
       width: 150px;
       text-align: center;
    }
+    li a {
+    display: block;
+    color: block;
+    text-align: center;
+    text-decoration: none;
+   }
+
+   li a:hover {
+    color:gold;
+   } 
          aside {background-color: gainsboro;
                // height: 200px;
                 width: 100px;
@@ -63,9 +73,9 @@
       <div class="myContainer">
        <!-- my nav -->
         <ul>
-          <li>Home</li>
-          <li>new</li>
-          <li>one</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">new</a></li>
+          <li><a href="index.html">one</a></li>
         </ul>
       </div>  
     </nav>
