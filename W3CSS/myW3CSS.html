@@ -16,14 +16,35 @@
     <h1>Slideshow </h1>
   </div>
   <div class="w3-container">
-    <h1><h1>put at least 4 pictures here</h1>
-    <img class="mySlides" src="slideShow1.jpg" style="width:100%">
-    <img class="mySlides" src="slideShow2.jpg" style="width:100%">
-    <img class="mySlides" src="slideShow3.jpg" style="width:100%">
-    <img class="mySlides" src="slideShow4.jpg" style="width:100%">
-    <img class="mySlides" src="slideShow5.jpg" style="width:100%">
-  </h1>
-  </div>
+    <h1>put at least 4 pictures here</h1>
+    <img class="mySlides" src="a.jpg" style="width:100%">
+    <img class="mySlides" src="b.jpg" style="width:100%">
+    <img class="mySlides" src="c.jpg" style="width:100%">
+    <img class="mySlides" src="d.jpg" style="width:100%">
+    <img class="mySlides" src="e.jpg" style="width:100%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+  
   <div class="w3-container w3-orange">
     <h1>Slideshow footer</h1>
   </div>
