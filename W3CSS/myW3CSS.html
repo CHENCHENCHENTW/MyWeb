@@ -9,21 +9,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
+ <style>
+    .myAutoSlides {
+         display: none;
+    }
+  </style>
 <body>
 
   <div class="w3-container w3-blue">
     <h1>Slideshow </h1>
   </div>
-  <div class="w3-container">
-    <h1>put at least 4 pictures here</h1>
+  <div class="w3-content"  style="width:800px;">
+    <span>Manual SlideShow</span>
+    
+  <div class="w3-display-container">
     <img class="mySlides" src="a.jpg" style="width:100%">
     <img class="mySlides" src="b.jpg" style="width:100%">
     <img class="mySlides" src="c.jpg" style="width:100%">
     <img class="mySlides" src="d.jpg" style="width:100%">
     <img class="mySlides" src="e.jpg" style="width:100%">
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <button class="w3-content w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-content w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
   <script>
 var slideIndex = 1;
